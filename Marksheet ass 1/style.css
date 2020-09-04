@@ -1,0 +1,95 @@
+@font-face {
+  font-family: Certificate-font;
+  src: url('Certificate.ttf');
+}
+
+@font-face {
+  font-family: typewriter-font;
+  src: url('typewriter.ttf');
+}
+
+body {
+  padding-top: 20px;
+  background-color: black;
+  font-weight: bold;
+  color: red;
+}
+h1 {
+  color: black;
+  font-family: 'Certificate-font';
+  font-size: 50px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: auto;
+  padding: 20px 20px;
+}
+th,
+td {
+  border: 2px solid red;
+  text-align: center;
+}
+
+.container {
+  border: 3px double red;
+  padding: 10px;
+  width: 65%;
+  margin: auto;
+  background-color: #f9f1f1;
+  background-image: url('https://www.transparenttextures.com/patterns/corrugation.png');
+  position: relative;
+}
+.university {
+  display: block;
+  text-align: center;
+  position: relative;
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  left: 10px;
+  top: -25px;
+}
+
+.details {
+  padding: 0px 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 10px;
+  font-size: 20px;
+}
+
+.typewriter {
+  color: black;
+  font-family: 'typewriter-font', sans-serif;
+  font-size: 20px;
+}
+
+.tb-head {
+  font-size: 20px;
+}
+.normal {
+  color: red;
+  font-family: serif;
+}
+
+.sign {
+  position: absolute;
+  right: 5px;
+  bottom: 0;
+  text-align: center;
+}
+
+.top-lft {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.Remark {
+  padding-left: 20px;
+  font-size: 20px;
+}

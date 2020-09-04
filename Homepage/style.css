@@ -1,0 +1,23 @@
+body {
+  background-color: aquamarine;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url('https://www.transparenttextures.com/patterns/black-paper.png');
+}
+
+.container {
+  line-height: 30px;
+  margin: 30px 50px;
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 40px;
+  background-image: url('https://www.transparenttextures.com/patterns/cutcube.png');
+  position: relative;
+  background-color: #f9f1f1;
+}
+
+.assignments-list {
+  border-radius: 20px;
+  margin: 30px 25%;
+  background-color: bisque;
+}

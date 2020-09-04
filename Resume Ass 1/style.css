@@ -1,0 +1,45 @@
+body {
+  padding: 10px 100px;
+  font-family: sans-serif;
+  background-color: #f9f1f1;
+}
+table,
+th,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+  font-size: 20px;
+}
+img {
+  height: 40px;
+  width: 100x;
+}
+
+hr {
+  border: 0;
+  border-top: 3px double #8c8c8c;
+}
+
+.profile-picture {
+  background-image: url('GoogleDP.jpg');
+  background-size: 100%;
+  border-radius: 100%;
+  margin: auto;
+  height: 150px;
+  width: 150px;
+}
+.profile-picture:hover {
+  filter: drop-shadow(0px 0px 15px orange);
+}
+
+.name {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+img:hover {
+  filter: drop-shadow(0px 0px 15px black);
+  transform: scale(1.12);
+}
