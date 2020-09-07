@@ -20,16 +20,13 @@ body {
   grid-template-rows: 1fr;
   grid-template-columns: repeat(3, 1fr);
   border-radius: 10px 10px 0px 0px;
-  align-items: center;
-  justify-items: center;
-  /* background-image: linear-gradient(
-    to bottom,
-    #28df99,
-    #99f3bd,
-    #d2f6c5,
-    #f6f7d4
-  ); */
+  /* align-items: stretch; */
+  justify-items: stretch;
   background-color: #bfdcae;
+}
+
+.navbar > div:hover {
+  background-color: #81b214;
 }
 
 .profile-picture {
@@ -88,6 +85,7 @@ body {
 .dropdown {
   position: relative;
   display: inline-block;
+  text-align: center;
 }
 
 .dropdown-content {
