@@ -20,7 +20,7 @@ body {
   grid-template-rows: 1fr;
   grid-template-columns: repeat(3, 1fr);
   border-radius: 10px 10px 0px 0px;
-  /* align-items: stretch; */
+
   justify-items: stretch;
   background-color: #bfdcae;
 }
@@ -77,22 +77,20 @@ body {
 .dropbtn {
   all: none;
   color: #87431d;
-  /* padding: 16px;
-  font-size: 16px; */
   border: none;
 }
 
 .dropdown {
   position: relative;
-  display: inline-block;
+  display: block;
   text-align: center;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
+  left: 0px;
   background-color: #f1f1f1;
-  min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -109,7 +107,8 @@ body {
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+  display: inline-block;
+  width: 100%;
 }
 
 .dropdown:hover .dropbtn {
