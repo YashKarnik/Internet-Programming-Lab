@@ -82,6 +82,35 @@ body {
   color: #3e8e41;
 }
 
-.info {
-  padding: 10px;
+.info,
+.ip {
+  padding: 1px 10px;
+  position: relative;
+}
+
+.svgs > img {
+  height: 50px;
+  width: 50px;
+  margin: 0px 30px;
+}
+
+.svgs {
+  position: absolute;
+  left: 400px;
+  top: 5px;
+}
+
+#html-svg {
+  transform: rotate(30deg);
+}
+#css-svg {
+  transform: rotate(-30deg);
+  margin-bottom: 20px;
+}
+#php-svg {
+  transform: rotate(30deg);
+}
+#js-svg {
+  transform: rotate(-30deg);
+  margin-bottom: 20px;
 }
