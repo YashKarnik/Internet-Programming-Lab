@@ -22,7 +22,7 @@ hr {
 }
 
 .profile-picture {
-  background-image: url('GoogleDP.jpg');
+  background-image: url('../static/images/GoogleDP.jpg');
   background-size: 100%;
   border-radius: 100%;
   margin: auto;
