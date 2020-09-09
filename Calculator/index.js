@@ -13,12 +13,14 @@ document.addEventListener('click', (e) => {
   updateDisplay({ key: e.target.innerHTML })
 })
 
-// buttons.addEventListener('click', buttonStyle)
-
-// function buttonStyle() {
-//   buttons.classList.add('.clicked')
-//   setTimeout(() => buttons.classList.remove('.clicked'), 100)
-// }
+buttons.forEach((element) => {
+  element.addEventListener('click', () => buttonStyle(element))
+})
+function buttonStyle(x) {
+  console.log(x)
+  x.classList.add('clicked')
+  setTimeout(() => x.classList.remove('clicked'), 100)
+}
 
 function updateDisplay(e) {
   if (!equalsFLag) {
@@ -42,12 +44,14 @@ function updateDisplay(e) {
         op1 = value1.innerHTML
       }
     } else if (e.key == '=') {
-      console.log({ op1, op2, oper })
-      answer.innerHTML = calculate(op1, op2, oper)
-      op1 = op2 = 0
-      oper = ''
-      operatorFlag = false
-      equalsFLag = true
+      if (oper != '') {
+        console.log({ op1, op2, oper })
+        answer.innerHTML = calculate(op1, op2, oper)
+        op1 = op2 = 0
+        oper = ''
+        operatorFlag = false
+        equalsFLag = true
+      }
     }
     // console.log(value1.innerHTML, value2.innerHTML, operator.innerHTML)
   }
@@ -70,6 +74,7 @@ function calculate(a = 0, b = 0, o = '') {
   else if (o == '-') return a - b
   else if (o == '/') return parseFloat(a / b).toFixed(2)
   else if (o == '*') return a * b
-  else if (o == '%')
-    return parseFloat((100 * Math.min(a, b)) / Math.max(a, b)).toFixed(2)
+  else if (o == '%') return a % b
+  //     return parseFloat((100 * Math.min(a, b)) / Math.max(a, b)).toFixed(2)
+  // }
 }
