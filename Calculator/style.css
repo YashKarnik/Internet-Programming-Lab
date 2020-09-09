@@ -1,0 +1,32 @@
+.container {
+  margin: 10px 25%;
+  text-align: center;
+  line-height: 100px;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.display {
+  height: 100px;
+
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.display > div,
+.buttons > div {
+  background-color: gray;
+  margin: 5px;
+  border-radius: 5px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.clicked {
+  background-color: red;
+}
