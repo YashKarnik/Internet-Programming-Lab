@@ -1,5 +1,6 @@
 body {
   background-color: #b93232;
+  background-image: url('https://www.transparenttextures.com/patterns/diagmonds.png');
 }
 
 .container {
@@ -33,6 +34,7 @@ body {
   border: 2px solid black;
   cursor: pointer;
   transition-duration: 200ms;
+  background-image: url('https://www.transparenttextures.com/patterns/dust.png');
 }
 
 .buttons > div:hover,
