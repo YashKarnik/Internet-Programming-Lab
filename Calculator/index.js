@@ -2,7 +2,7 @@ const value1 = document.querySelector('.value1')
 const operator = document.querySelector('.operator')
 const value2 = document.querySelector('.value2')
 const answer = document.querySelector('.answer')
-const buttons = document.querySelectorAll('.buttons > div')
+const buttons = document.querySelectorAll('.buttons > div,#clear')
 let op1 = (op2 = 0)
 let oper = ''
 
