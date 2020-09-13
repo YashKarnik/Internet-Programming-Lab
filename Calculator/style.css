@@ -34,9 +34,6 @@ body {
   cursor: pointer;
   transition-duration: 200ms;
 }
-/* .clicked {
-  transform: scale(1.08, 1.08);
-} */
 
 .buttons > div:hover,
 #clear:hover {

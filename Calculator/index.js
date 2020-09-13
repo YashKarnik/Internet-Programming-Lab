@@ -2,7 +2,7 @@ const value1 = document.querySelector('.value1')
 const operator = document.querySelector('.operator')
 const value2 = document.querySelector('.value2')
 const answer = document.querySelector('.answer')
-const buttons = document.querySelectorAll('.buttons > div,#clear')
+
 let op1 = (op2 = 0)
 let oper = ''
 
@@ -12,15 +12,6 @@ document.addEventListener('keydown', updateDisplay)
 document.addEventListener('click', (e) => {
   updateDisplay({ key: e.target.innerHTML })
 })
-
-buttons.forEach((element) => {
-  element.addEventListener('click', () => buttonStyle(element))
-})
-function buttonStyle(x) {
-  console.log(x)
-  x.classList.add('clicked')
-  setTimeout(() => x.classList.remove('clicked'), 100)
-}
 
 function updateDisplay(e) {
   if (!equalsFLag) {
