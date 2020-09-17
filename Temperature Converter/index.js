@@ -22,6 +22,6 @@ function handleInput(e) {
   else if (id == 'mm-input') cm.value = value / 10
   else if (id == 'm-input') km.value = value / 1000
   else if (id == 'km-input') m.value = value * 1000
-  else if (id == 'secs-input') hr.value = value / 3600
+  else if (id == 'secs-input') hr.value = parseFloat(value / 32600).toFixed(3)
   else if (id == 'hr-input') secs.value = value * 3600
 }
