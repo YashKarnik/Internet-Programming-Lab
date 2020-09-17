@@ -11,7 +11,8 @@ mm.addEventListener('input', (e) => handleInput(e))
 function handleInput(e) {
   let { id, value } = e.target
   if (id == 'degree-input') farenheit.value = value * (9 / 5) + 32
-  else if (id == 'farenheit-input') degree.value = ((value - 32) * 5) / 9
+  else if (id == 'farenheit-input')
+    degree.value = parseFloat(((value - 32) * 5) / 9).toFixed(3)
   else if (id == 'cm-input') mm.value = value * 100
   else if (id == 'mm-input') cm.value = value / 100
 }
