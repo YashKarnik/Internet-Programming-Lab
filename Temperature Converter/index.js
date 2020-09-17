@@ -15,7 +15,6 @@ inputFields.forEach((element, i) => {
 
 function handleInput(e) {
   let { id, value } = e.target
-  console.log(e.target)
   if (id == 'celcius-input') farenheit.value = value * (9 / 5) + 32
   else if (id == 'farenheit-input')
     celcius.value = parseFloat(((value - 32) * 5) / 9).toFixed(3)
