@@ -3,11 +3,14 @@
   text-align: center;
 }
 body {
-  padding: 10px 400px;
+  padding: 10px 30px;
   background-color: #222831;
   color: white;
 }
-
+h1 {
+  padding: 0;
+  margin: 0;
+}
 p {
   margin: 0;
   padding: 0;
@@ -24,16 +27,22 @@ input {
 
 .main {
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 40px;
+  grid-template-columns: 1fr 1fr;
 }
 
 .main > div {
-  font-size: 30px;
   background-color: #29a19c;
+  font-size: 30px;
+  margin: 20px;
   padding: 40px;
   border-radius: 10px;
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(3, 1fr);
+}
+
+.main > div p {
+  grid-column: 1/4;
+  margin-bottom: 10px;
+  font-size: 30px;
 }
