@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img src="../static/svgs/dumbell.svg" id="background_image" />
+    <nav class="navbar">
+      <ul>
+        <li>@Yash_Karnik</li>
+        <li>Exercise List</li>
+        <li class="macros-dropdown">
+          <span
+            >Macros&nbsp;&nbsp;<img src="../static/svgs/down-arrow.svg"
+          /></span>
+          <ul>
+            <li>Carboydrates</li>
+            <li>Fats</li>
+            <li>Protein</li>
+          </ul>
+        </li>
+        <li class="macros-dropdown">
+          <span
+            >Suggestions&nbsp;&nbsp;<img src="../static/svgs/down-arrow.svg"
+          /></span>
+          <ul>
+            <li>Weight Loss</li>
+            <li>Weight Gain</li>
+            <li>Muscle building</li>
+            <li>Strength</li>
+            <li>Cardio</li>
+          </ul>
+        </li>
+        <li>Logout</li>
+      </ul>
+    </nav>
+    <fieldset>
+      <legend style="color: white;">Add Exercise:</legend>
+    <form action="add-exercise.html" method="post" id="add-exercise" >
+      <div>
+        <label for="exericses">Exercises</label>
+        <input list="exercise-datalist" name="exericses"  pattern="[A-Za-z]">
+          <datalist id="exercise-datalist">
+            <option >Squat</option>
+            <option>Benchpress(Dumbell)</option>
+            <option>Benchpress(Barbell)</option>
+            <option>Deadlift</option>
+            <option>Pull ups</option>
+            <option>Snatch</option>
+            <option>Clean and Jerk</option>
+          </datalist>
+      </input>
+      </div>
+      <div>
+        <label for="repititions">Repititions</label>
+        <input
+          type="number"
+          name="repititions"
+          id=""
+          min="5"
+        max="10"
+          placeholder="Repititions"
+        />
+      </div>
+      <div>
+        <label for="sets" >Sets</label>
+        <input type="number" name="sets" id="" placeholder="Sets" min="5"
+        max="10"/>
+      </div>
+      <div>
+        <label for="">Date added</label>
+        <input type="date" name="date-added" id="" />
+      </div>
+      <div>
+        <label for="">Time added</label>
+        <input type="time" name="" id="" />
+      </div>
+      <div>
+        <label for="Time" id="range-label">Time Spent: 5 minutes</label>
+        <input
+          type="range"
+          name="Time"
+          id="time-spent"
+          placeholder="Time(Minutes)"
+          value="5"
+          min="5"
+          max="200"
+        />
+      </div>
+      <button type="button">&#x2b;</button>
+</form>
+</fieldset>    
+  </body>
+  <script>
+        range = document.getElementById("time-spent")
+        rangeLabel = document.getElementById("range-label")
+        console.log(range.value)
+        range.addEventListener("input",(e)=>{
+            console.log(e.target.value)
+            range.value=e.target.value
+              rangeLabel.innerHTML ="Time Spent: " + e.target.value+" minutes"
+
+        }) 
+  </script>
+</html>

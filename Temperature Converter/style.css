@@ -23,6 +23,7 @@ input {
   border: none;
   font-size: 30px;
   font-weight: 10px;
+outline:none;
 }
 
 .main {
