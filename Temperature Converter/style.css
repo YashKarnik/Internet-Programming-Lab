@@ -23,7 +23,7 @@ input {
   border: none;
   font-size: 30px;
   font-weight: 10px;
-outline:none;
+  outline: none;
 }
 
 .main {
@@ -43,7 +43,7 @@ outline:none;
 }
 
 .main > div p {
-  grid-column: 1/4;
+  grid-column: 1/-1;
   margin-bottom: 10px;
   font-size: 30px;
 }

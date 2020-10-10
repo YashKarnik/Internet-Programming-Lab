@@ -11,6 +11,7 @@
 * {
   margin: 0;
   padding: 0;
+  outline: none;
 }
 
 body {
@@ -76,6 +77,19 @@ body {
   font-size: 1.4rem;
   background-color: #e8ffc1;
   color: #133b5c;
+}
+
+.video,
+.audio {
+  margin-bottom: 20px;
+  grid-column: 1/-1;
+}
+video {
+  height: 100%;
+  width: 100%;
+}
+audio {
+  width: 100%;
 }
 @media only screen and (max-width: 780px) {
   .unordered-nav-list {
