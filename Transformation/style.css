@@ -1,0 +1,94 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	background-color: #000;
+	color: #fff;
+	padding-top: 100px;
+}
+
+.base {
+	width: 200px;
+	height: 200px;
+	background-color: #fff;
+	margin: 30px;
+	color: black;
+	text-align: center;
+	line-height: 200px;
+}
+
+.container {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-items: center;
+}
+
+.scale {
+	transform: scale(1.5);
+	animation: pulse 1s ease-in-out infinite alternate;
+}
+
+.rotate {
+	animation: rotateAni 3s linear infinite normal;
+}
+
+.translate {
+	animation-name: aniOne;
+	animation-duration: 3s;
+	animation-direction: normal;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 100%;
+	position: relative;
+	animation-iteration-count: infinite;
+}
+
+@keyframes aniOne {
+	0% {
+		background-color: white;
+		top: 0px;
+		left: 0px;
+	}
+	20% {
+		background-color: red;
+		top: 100px;
+		left: 0px;
+	}
+	40% {
+		background-color: green;
+		top: 100px;
+		left: 100px;
+	}
+	60% {
+		background-color: blue;
+		top: 200px;
+		left: 100px;
+	}
+	80% {
+		background-color: yellow;
+		top: 0px;
+		left: 100px;
+	}
+}
+
+@keyframes pulse {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(2);
+	}
+}
+@keyframes rotateAni {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
