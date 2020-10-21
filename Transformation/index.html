@@ -8,9 +8,37 @@
 	</head>
 	<body>
 		<div class="container">
-			<div class="base translate">Y</div>
-			<div class="base rotate">Rotate</div>
-			<div class="base scale">Scale</div>
+			<div>
+				<h1>Animation</h1>
+				<div class="base translate">Y</div>
+			</div>
+			<div>
+				<h1>Rotate</h1>
+				<div class="base rotate">Rotate</div>
+			</div>
+			<div>
+				<h1>Scale</h1>
+				<div class="base scale">Scale</div>
+			</div>
+			<h1 style="grid-column: 1/-1; display: block">
+				Before/After
+				<hr />
+			</h1>
+			<div>
+				<div class="base" style="transform: scale(0.5)">Before Scale</div>
+				<br />
+				<div class="base">After Scale</div>
+			</div>
+			<div>
+				<div class="base">Before Rotate</div>
+				<br />
+				<div class="base" style="transform: rotate(45deg)">After Rotate</div>
+			</div>
+			<div>
+				<div class="base">Before Skew</div>
+				<br />
+				<div class="base" style="transform: Skew(45deg)">After Skew</div>
+			</div>
 		</div>
 		<a
 			href="../index.html"

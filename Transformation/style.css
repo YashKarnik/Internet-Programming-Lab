@@ -7,7 +7,6 @@
 body {
 	background-color: #000;
 	color: #fff;
-	padding-top: 100px;
 }
 
 .base {
@@ -27,13 +26,16 @@ body {
 	justify-items: center;
 }
 
-.scale {
-	transform: scale(1.5);
-	animation: pulse 1s ease-in-out infinite alternate;
+.scale,
+.rotate {
+	transition-duration: 200ms;
 }
 
-.rotate {
-	animation: rotateAni 3s linear infinite normal;
+.scale:hover {
+	transform: scale(1.3);
+}
+.rotate:hover {
+	transform: rotate(108deg);
 }
 
 .translate {
@@ -60,12 +62,12 @@ body {
 		left: 0px;
 	}
 	40% {
-		background-color: green;
+		background-color: skyblue;
 		top: 100px;
 		left: 100px;
 	}
 	60% {
-		background-color: blue;
+		background-color: lawngreen;
 		top: 200px;
 		left: 100px;
 	}
@@ -73,22 +75,5 @@ body {
 		background-color: yellow;
 		top: 0px;
 		left: 100px;
-	}
-}
-
-@keyframes pulse {
-	from {
-		transform: scale(1);
-	}
-	to {
-		transform: scale(2);
-	}
-}
-@keyframes rotateAni {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
 	}
 }
