@@ -33,6 +33,7 @@ body {
   border-radius: 5px;
   border: 2px solid black;
   cursor: pointer;
+  overflow:hidden;
   transition-duration: 200ms;
   background-image: url('https://www.transparenttextures.com/patterns/dust.png');
 }
